@@ -89,97 +89,186 @@
         </div>
     </section> --> 
     <!-- Hero Section1 with Carousel -->
-<section class="hero-bg text-white py-16 md:py-24 rounded-b-3xl shadow-xl relative overflow-hidden">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
+    <!-- 1. Hero Section with Split-Content Carousel -->
+    <section id="hero" class="bg-[#fef3e9] relative rounded-b-3xl shadow-xl overflow-hidden p-4">
+        <div class="max-w-7xl mx-auto text-center relative">
+            
+            <!-- Carousel Container (Flex to handle slides) -->
+            <div class="relative w-full mx-auto overflow-hidden rounded-2xl shadow-2xl bg-gray-50 carousel-container">
+                
+                <!-- Inner Carousel Track (Will be translated by JS) -->
+                <div id="carousel" class="flex transition-transform duration-700 ease-in-out h-full">
+                    
+                    <!-- SLIDE 1: Fish Cutlet Focus (Image URL fixed) -->
+                    <div class="min-w-full h-full flex items-center justify-center p-4">
+                        <div class="bg-white p-6 md:p-12 flex flex-col md:flex-row items-center justify-between rounded-xl shadow-lg w-full h-full">
+                            <!-- Left side: Text content -->
+                            <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                                <p class="tracking-widest text-sm text-gray-500 font-semibold mb-3">
+                                KOLKATA’S FAVOURITE TEA & SNACKS HUB
+                                </p>
+                                <h1 class="text-5xl font-extrabold text-[#4b3e34] mb-5">
+                                THE PERFECT CUTLET
+                                </h1>
+                                <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                                Our crispy, flavorful Fish Cutlet is the ideal pairing for your signature Masala Chai. Order today!
+                                </p>
+                                <a href="https://link.zomato.com/xqzv/rshare?id=5158729830563493" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-xl shadow-lg text-lg inline-flex items-center justify-center transition duration-300">
+                                    Order on Zomato
+                                </a>
+                            </div>
+                            <!-- Right side: Image (Placeholder URL) -->
+                            <div class="md:w-1/2 flex justify-center">
+                                <img src="G:\Kaustav_website\Fish_cutlet_.jpg" alt="Delicious Fish Cutlet" class="rounded-xl shadow-2xl w-full max-w-md object-cover">
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- Carousel Container -->
-    <div class="relative w-full mx-auto overflow-hidden rounded-2xl shadow-xl">
-      <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
-        
-        <!-- Slide 1 -->
-        <div class="min-w-full flex flex-col items-center justify-center py-12 px-4 bg-opacity-70">
-          <!-- <img src="G:/Chamahal_website/images/DSC_5319.jpg"> -->
+                    <!-- SLIDE 2: Chicken Popcorn Focus (Image URL fixed) -->
+                    <div class="min-w-full h-full flex items-center justify-center p-4">
+                        <div class="bg-white p-6 md:p-12 flex flex-col md:flex-row items-center justify-between rounded-xl shadow-lg w-full h-full">
+                            <!-- Left side: Text content -->
+                            <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                                <p class="tracking-widest text-sm text-gray-500 font-semibold mb-3">
+                                KOLKATA’S FAVOURITE TEA & SNACKS HUB
+                                </p>
+                                <h1 class="text-5xl font-extrabold text-[#4b3e34] mb-5">
+                                CRISPY CHICKEN POPCORN
+                                </h1>
+                                <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                                Pop a burst of flavor! Perfectly seasoned and fried, a snack that everyone loves.
+                                </p>
+                                <a href="https://www.swiggy.com/direct/brand/437066?source=swiggy-direct&subSource=generic" target="_blank" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-xl shadow-lg text-lg inline-flex items-center justify-center transition duration-300">
+                                    Order on Swiggy
+                                </a>
+                            </div>
+                            <!-- Right side: Image (Placeholder URL) -->
+                            <div class="md:w-1/2 flex justify-center">
+                                <img src="G:\Kaustav_website\Chicken_popcorn.jpg" alt="Crispy Chicken Popcorn" class="rounded-xl shadow-2xl w-full max-w-md object-cover">
+                            </div>
+                        </div>
+                    </div>
 
-          <h2 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-4">Before the Chaos, There’s Cha Mahal</h2>
-          <p class="text-xl md:text-2xl text-gray-200 mb-8">Start your day with our signature Masala Chai & crispy snacks!</p>
+                    <!-- SLIDE 3: Chicken Fried Momo Focus (Image URL fixed) -->
+                    <div class="min-w-full h-full flex items-center justify-center p-4">
+                        <div class="bg-white p-6 md:p-12 flex flex-col md:flex-row items-center justify-between rounded-xl shadow-lg w-full h-full">
+                            <!-- Left side: Text content -->
+                            <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                                <p class="tracking-widest text-sm text-gray-500 font-semibold mb-3">
+                                KOLKATA’S FAVOURITE TEA & SNACKS HUB
+                                </p>
+                                <h1 class="text-5xl font-extrabold text-[#4b3e34] mb-5">
+                                MOUTHWATERING MOMOS
+                                </h1>
+                                <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                                Steamed or fried, our Momos are served with a spicy, homemade dipping sauce. A perfect delight!
+                                </p>
+                                <a href="https://link.zomato.com/xqzv/rshare?id=5158729830563493" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-xl shadow-lg text-lg inline-flex items-center justify-center transition duration-300">
+                                    Order Now
+                                </a>
+                            </div>
+                            <!-- Right side: Image (Placeholder URL) -->
+                            <div class="md:w-1/2 flex justify-center">
+                                <img src="G:\Kaustav_website\Cheese_Momo.jpg" alt="Chicken Fried Momos" class="rounded-xl shadow-2xl w-full max-w-md object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <!-- FIX: Ensuring z-index is applied and buttons are correctly positioned relative to the container. -->
+                <button onclick="prevSlide()" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-red-600 bg-opacity-70 text-white hover:bg-opacity-100 p-3 rounded-full shadow-lg transition duration-300 z-20">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button onclick="nextSlide()" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-red-600 bg-opacity-70 text-white hover:bg-opacity-100 p-3 rounded-full shadow-lg transition duration-300 z-20">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+
+                <!-- Navigation Dots -->
+                <!-- FIX: Increasing z-index to z-20 to ensure dots are above all slide content. -->
+                <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
+                    <button id="dot-0" class="w-3 h-3 bg-red-600 rounded-full focus:outline-none transition duration-300" onclick="setSlide(0)"></button>
+                    <button id="dot-1" class="w-3 h-3 bg-gray-300 rounded-full focus:outline-none transition duration-300" onclick="setSlide(1)"></button>
+                    <button id="dot-2" class="w-3 h-3 bg-gray-300 rounded-full focus:outline-none transition duration-300" onclick="setSlide(2)"></button>
+                </div>
+            </div>
+
+            <!-- Global CTA Buttons (Kept for easy access below the carousel) -->
+            <div id="cta" class="mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="https://link.zomato.com/xqzv/rshare?id=5158729830563493" target="_blank" class="cta-button bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-xl shadow-lg text-lg flex items-center justify-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    Order on Zomato
+                </a>
+                <a href="https://www.swiggy.com/direct/brand/437066?source=swiggy-direct&subSource=generic" target="_blank" class="cta-button bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-xl shadow-lg text-lg flex items-center justify-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    Order on Swiggy
+                </a>
+            </div>
         </div>
-
-        <!-- Slide 2 -->
-        <div class="min-w-full flex flex-col items-center justify-center py-12 px-4 bg-opacity-70">
-          <h2 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-4">Freshly Made, Delivered Hot</h2>
-          <p class="text-xl md:text-2xl text-gray-200 mb-8">Order piping hot Momos, Sandwiches & Maggi crafted with love.</p>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="min-w-full flex flex-col items-center justify-center py-12 px-4 bg-opacity-70">
-          <h2 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-4">Cloud Kitchen with a Heart</h2>
-          <p class="text-xl md:text-2xl text-gray-200 mb-8">Experience taste, hygiene, and happiness in every bite.</p>
-        </div>
-
-      </div>
-
-      <!-- Navigation Dots -->
-      <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">
-        <button class="w-3 h-3 bg-white bg-opacity-60 rounded-full focus:outline-none" onclick="setSlide(0)"></button>
-        <button class="w-3 h-3 bg-white bg-opacity-40 rounded-full focus:outline-none" onclick="setSlide(1)"></button>
-        <button class="w-3 h-3 bg-white bg-opacity-40 rounded-full focus:outline-none" onclick="setSlide(2)"></button>
-      </div>
-
-      <!-- Navigation Arrows -->
-      <button onclick="prevSlide()" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-40 p-2 rounded-full">
-        ◀
-      </button>
-      <button onclick="nextSlide()" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-40 p-2 rounded-full">
-        ▶
-      </button>
-    </div>
-
-    <!-- CTA Buttons -->
-    <div id="cta" class="mt-12 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-      <a href="https://link.zomato.com/xqzv/rshare?id=5158729830563493" target="_blank" class="cta-button bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-xl shadow-lg text-lg flex items-center justify-center">
-        Order on Zomato
-      </a>
-      <a href="https://www.swiggy.com/direct/brand/437066?source=swiggy-direct&subSource=generic" target="_blank" class="cta-button bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-xl shadow-lg text-lg flex items-center justify-center">
-        Order on Swiggy
-      </a>
-    </div>
-
-    <p class="mt-4" id="text-down-caresoule">Available for delivery staying you in your home</p>
-  </div>
-</section>
-
+    </section>
 <!-- Carousel Script -->
 <script>
-  let currentSlide = 0;
-  const slides = document.querySelectorAll("#carousel > div");
-  const dots = document.querySelectorAll(".absolute.bottom-6 button");
+   // Simple JavaScript for smooth scrolling (good UX)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
 
-  function updateCarousel() {
-    const offset = -currentSlide * 100;
-    document.getElementById("carousel").style.transform = `translateX(${offset}%)`;
-    dots.forEach((dot, i) => {
-      dot.classList.toggle("bg-opacity-60", i === currentSlide);
-      dot.classList.toggle("bg-opacity-40", i !== currentSlide);
-    });
-  }
+        // --- CAROUSEL LOGIC ---
+        let currentSlide = 0;
+        const slides = document.querySelectorAll("#carousel > div");
+        const dots = document.querySelectorAll(".absolute.bottom-6 button");
+        const totalSlides = slides.length;
 
-  function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    updateCarousel();
-  }
+        // Function to update the carousel's position and dot indicators
+        function updateCarousel() {
+            // Calculate the horizontal offset to show the current slide (100% per slide)
+            const offset = -currentSlide * 100;
+            const carousel = document.getElementById("carousel");
+            if (carousel) {
+                 carousel.style.transform = `translateX(${offset}%)`;
+            }
 
-  function prevSlide() {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    updateCarousel();
-  }
+            // Update navigation dots color
+            dots.forEach((dot, i) => {
+                if (i === currentSlide) {
+                    dot.classList.remove("bg-gray-300");
+                    dot.classList.add("bg-red-600");
+                } else {
+                    dot.classList.remove("bg-red-600");
+                    dot.classList.add("bg-gray-300");
+                }
+            });
+        }
 
-  function setSlide(index) {
-    currentSlide = index;
-    updateCarousel();
-  }
+        // Moves to the next slide, cycling back to 0
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        }
 
-  // Auto-slide every 5 seconds
-  setInterval(nextSlide, 5000);
+        // Moves to the previous slide, cycling to the end if necessary
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+
+        // Sets a slide directly based on dot click
+        function setSlide(index) {
+            currentSlide = index;
+            updateCarousel();
+        }
+
+        // Start auto-play when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            updateCarousel(); // Initialize the carousel view
+            setInterval(nextSlide, 5000); // Auto-slide every 5 seconds
+        });
+  
 </script>
 
 
@@ -326,6 +415,7 @@
 </body>
 
 </html>
+
 
 
 
